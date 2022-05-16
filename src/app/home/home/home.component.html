@@ -1,0 +1,41 @@
+<div class="strip" fxLayout="row" fxLayoutAlign="center center">
+     <span class="mat-display-3">Welcome  {{loggedInUser.lastName}} , {{loggedInUser.firstName}}  </span>
+</div>
+<div class="main-container">
+    <!-- <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style"> 
+        <mat-button-toggle value="general">General</mat-button-toggle>
+        <mat-button-toggle value="phonetic">Phoenetic</mat-button-toggle>
+        <mat-button-toggle value="recording">Recording</mat-button-toggle>
+    </mat-button-toggle-group> -->
+    <mat-card>
+      <!-- <mat-card-title>Search</mat-card-title> -->
+      <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Search">
+          <div class="tab-content">1</div>
+        </mat-tab>
+        <mat-tab label="My Profile">
+          <div class="tab-content">2</div>
+        </mat-tab>
+        <mat-tab label="Administrator">
+          <div class="tab-content">3</div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+</div>
+
+<!-- <form class="container">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Search</mat-label>
+          <input type="text"
+                 placeholder="Search with UID or Name"
+                 aria-label="Search User"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form> -->
